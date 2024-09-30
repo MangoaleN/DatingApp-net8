@@ -15,7 +15,7 @@ export const appConfig: ApplicationConfig = {
    provideHttpClient(withInterceptors([errorInterceptor, jwtInterceptor, loadingInterceptor])),
    provideAnimations(),
    provideToastr({
-     positionClass: 'toast-bottom-right'
+     positionClass: 'toast-top-left'
    }),
    importProvidersFrom(NgxSpinnerModule)
   ]
