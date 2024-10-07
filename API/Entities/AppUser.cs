@@ -4,9 +4,7 @@ namespace API.Entities;
 
 public class AppUser
 {
-    //[Key]
     public int Id { get; set; }
-    //To Not all nulls
     public required string UserName { get; set;}
 
     public byte[] PasswordHash{get; set;} = [];
@@ -32,8 +30,7 @@ public class AppUser
 
     public List<Photo> Photos { get; set; } = [];
 
-    //public int GetAge()
-    //{
-   //     return DateOfBirth.CalculateAge();
-    //}
+    public List<UserLike> LikedByUsers { get; set; } = [];
+
+    public List<UserLike> LikedUsers { get; set; } = [];
 }
